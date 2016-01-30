@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="example.com.maitreev2.PlaceDetail"
+    tools:showIn="@layout/activity_place_detail">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/placeicon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rani3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placeicon"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    android:id="@+id/placename"
+                    style="@style/HeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sample_name" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/NormalText"
+                    android:id="@+id/placecoordinator"
+                    android:layout_below="@+id/placename"
+                    android:text="Program Co-ordinator:-"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/coordinatorname"
+                    android:text="@string/sample_name"
+                    android:layout_below="@+id/placecoordinator"/>
+
+                <TextView
+                    android:id="@+id/basedesc"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coordinatorname"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/sample_base_desc" />
+
+                <ImageView
+                    android:id="@+id/placeimage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/basedesc"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rani1" />
+
+                <ImageView
+                    android:id="@+id/placeimage2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/placeimage1"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/rani2" />
+
+                <TextView
+                    android:id="@+id/extradesc"
+                    style="@style/NormalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/placeimage2"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="@string/sample_extra_desc" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,220 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Meetcardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:elevation="100dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TitleText"
+                        android:id="@+id/titletext"
+                        android:text="@string/meet_point" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:paddingBottom="10dp"
+                    android:background="@color/background_white"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/meetplace"
+                        android:layout_toLeftOf="@+id/navigatebutton"
+                        style="@style/NormalText"
+                        android:text="@string/sample_address" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/meetplace"
+                        android:paddingTop="@dimen/margin_small"
+                        android:id="@+id/meettime"
+                        style="@style/NormalText"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        android:layout_toLeftOf="@+id/navigatebutton"
+                        android:layout_alignLeft="@+id/meetplace"
+                        android:layout_alignStart="@+id/meetplace" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/navigatebutton"
+                        android:scaleType="centerInside"
+                        android:background="@color/background_white"
+                        android:src="@drawable/location"
+                        android:paddingTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    ...
+
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/Placecardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TitleText"
+                        android:id="@+id/placetitle"
+                        android:text="@string/place" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:id="@+id/placelist1"></ListView>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/Pickcardview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:elevation="100dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TitleText"
+                        android:id="@+id/pickuptitle"
+                        android:text="@string/pick_up" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/darker_gray" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="@dimen/margin_medium"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/pickplace"
+                        android:layout_toLeftOf="@+id/navigatebutton2"
+                        style="@style/NormalText"
+                        android:text="@string/sample_address" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/pickplace"
+                        android:paddingTop="@dimen/margin_small"
+                        android:id="@+id/picktime"
+                        style="@style/NormalText"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sample_time"
+                        android:layout_toLeftOf="@+id/navigatebutton2"
+                        android:layout_alignLeft="@+id/pickplace"
+                        android:layout_alignStart="@+id/pickplace" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/navigatebutton2"
+                        android:scaleType="centerInside"
+                        android:background="@color/background_white"
+                        android:src="@drawable/location"
+                        android:paddingTop="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    ...
+                </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
