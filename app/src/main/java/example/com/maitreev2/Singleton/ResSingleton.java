@@ -8,7 +8,7 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.List;
 
-import example.com.maitreev2.Response;
+import example.com.maitreev2.ResponseList;
 
 /**
  * Created by Hello on 29-01-2016.
@@ -16,15 +16,15 @@ import example.com.maitreev2.Response;
 public class ResSingleton {
 
     static ResSingleton obj;
-    List<Response.DatesEntity> datesEntities;
-    Response.DatesEntity.PlacedetailsEntity placeEntity;
+    List<ResponseList.DatesEntity> datesEntities;
+    ResponseList.DatesEntity.PlacedetailsEntity placeEntity;
     RequestQueue requestQueue;
 
-    public Response.DatesEntity.PlacedetailsEntity getPlaceEntity() {
+    public ResponseList.DatesEntity.PlacedetailsEntity getPlaceEntity() {
         return placeEntity;
     }
 
-    public void setPlaceEntity(Response.DatesEntity.PlacedetailsEntity placeEntity) {
+    public void setPlaceEntity(ResponseList.DatesEntity.PlacedetailsEntity placeEntity) {
         this.placeEntity = placeEntity;
     }
 
@@ -38,12 +38,12 @@ public class ResSingleton {
         return obj;
     }
 
-    public void setdateList(List<Response.DatesEntity> datesEntities)
+    public void setdateList(List<ResponseList.DatesEntity> datesEntities)
     {
 
         this.datesEntities=datesEntities;
     }
-    public  List<Response.DatesEntity> getdateList()
+    public  List<ResponseList.DatesEntity> getdateList()
     {
         return datesEntities;
     }

@@ -24,8 +24,8 @@ import example.com.maitreev2.Adapters.PlaceListAdapter;
 public class TabFragment extends Fragment {
 
 
-    Response.DatesEntity datesEntity;
-    public TabFragment(Response.DatesEntity datesEntity){
+    ResponseList.DatesEntity datesEntity;
+    public TabFragment(ResponseList.DatesEntity datesEntity){
        this.datesEntity=datesEntity;
     }
 
@@ -38,9 +38,9 @@ public class TabFragment extends Fragment {
 
         View view=inflater.inflate(R.layout.fragment_tab,container,false);
 
-        List<Response.DatesEntity.PlacedetailsEntity> placepointlist=datesEntity.getPlacedetails();
-        List<Response.DatesEntity.MeetingpointsEntity> meetpointlist=datesEntity.getMeetingpoints();
-        List<Response.DatesEntity.PickuppointsEntity> pickpointlist=datesEntity.getPickuppoints();
+        List<ResponseList.DatesEntity.PlacedetailsEntity> placepointlist=datesEntity.getPlacedetails();
+        List<ResponseList.DatesEntity.MeetingpointsEntity> meetpointlist=datesEntity.getMeetingpoints();
+        List<ResponseList.DatesEntity.PickuppointsEntity> pickpointlist=datesEntity.getPickuppoints();
         listView= (ListView) view.findViewById(R.id.placelist);
         listView.setAdapter(new PlaceListAdapter(getContext(),placepointlist));
         int count=listView.getCount();

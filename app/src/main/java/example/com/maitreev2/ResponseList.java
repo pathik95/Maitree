@@ -15,7 +15,11 @@ public class ResponseList {
      */
 
     private List<DatesEntity> Dates;
-
+    /**
+     * hostid : 1
+     * hostname : Chirag Pandya
+     * hostpic : null
+     */
     public void setDates(List<DatesEntity> Dates) {
         this.Dates = Dates;
     }
@@ -23,6 +27,8 @@ public class ResponseList {
     public List<DatesEntity> getDates() {
         return Dates;
     }
+
+
 
     public static class DatesEntity {
         private String date;

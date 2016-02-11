@@ -15,6 +15,7 @@ import java.util.List;
 import example.com.maitreev2.PlaceDetail;
 import example.com.maitreev2.R;
 import example.com.maitreev2.Response;
+import example.com.maitreev2.ResponseList;
 import example.com.maitreev2.Singleton.ResSingleton;
 
 /**
@@ -25,8 +26,8 @@ public class PlaceListAdapter extends BaseAdapter{
     String[] placename={"Place name1","Place Name2","Placw Name3","Place Name4","Place name5","Placename6","placename 7"};
     LayoutInflater mLayoutInflater;
     Context context;
-    List<Response.DatesEntity.PlacedetailsEntity> placelist;
-   public PlaceListAdapter(Context context,List<Response.DatesEntity.PlacedetailsEntity> placelist)
+    List<ResponseList.DatesEntity.PlacedetailsEntity> placelist;
+   public PlaceListAdapter(Context context,List<ResponseList.DatesEntity.PlacedetailsEntity> placelist)
     {
         this.context=context;
         this.placelist=placelist;
@@ -38,7 +39,7 @@ public class PlaceListAdapter extends BaseAdapter{
     }
 
     @Override
-    public Response.DatesEntity.PlacedetailsEntity getItem(int position) {
+    public ResponseList.DatesEntity.PlacedetailsEntity getItem(int position) {
         return placelist.get(position);
     }
 

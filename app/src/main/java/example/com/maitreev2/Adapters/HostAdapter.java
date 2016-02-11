@@ -15,17 +15,16 @@ import java.util.List;
 
 import example.com.maitreev2.R;
 import example.com.maitreev2.Response;
+import example.com.maitreev2.ResponseHost;
+import example.com.maitreev2.ResponseList;
 
 
-/**
- * Created by Dalwadi on 11-09-2015.
- */
 
 
 public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
 
 
-    private List<Response.HostEntity> hostList;
+    private List<ResponseHost.HostEntity> hostList;
 
         // Int Array to store the passed icons resource value from MainActivity.java
 
@@ -51,9 +50,9 @@ public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
             // Here we set the appropriate view in accordance with the the view type as passed when the holder object is created
 
 
-                textView = (TextView) itemView.findViewById(R.id.txthead); // Creating TextView object with the id of textView from item_row.xml
-                imageView = (ImageView) itemView.findViewById(R.id.circleView);// Creating ImageView object with the id of ImageView from item_row.xml
-                time= (TextView) itemView.findViewById(R.id.txttime);
+                textView = (TextView) itemView.findViewById(R.id.hostlistname); // Creating TextView object with the id of textView from item_row.xml
+                imageView = (ImageView) itemView.findViewById(R.id.hostlisticon);// Creating ImageView object with the id of ImageView from item_row.xml
+                time= (TextView) itemView.findViewById(R.id.hostlistid);
                 Holderid = 1;                                               // setting holder id as 1 as the object being populated are of type item row
 
 
@@ -71,7 +70,7 @@ public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
 
 
 
-    public HostAdapter(List<Response.HostEntity> hostList) { // HostAdapter Constructor with titles and icons parameter
+    public HostAdapter(List<ResponseHost.HostEntity> hostList) { // HostAdapter Constructor with titles and icons parameter
         // titles, icons, name, email, profile pic are passed from the main activity as we
         this.hostList=hostList;
                          //here we assign those passed values to the values we declared here
@@ -90,7 +89,7 @@ public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
     public HostAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
 
-            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.custlay, parent, false); //Inflating the layout
+            View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.hostrow, parent, false); //Inflating the layout
 
             ViewHolder vhItem = new ViewHolder(v, viewType); //Creating ViewHolder and passing the object of type view
 
@@ -115,7 +114,9 @@ public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
             //holder.imageView.setImageResource(mIcons[position]);
            // holder.time.setText(mTimes[position]);
 
-
+            holder.textView.setText(hostList.get(position).getHostname());
+            //holder.imageView;
+            holder.time.setText(hostList.get(position).getHostid());
             // Settimg the image with array of our icons
 
     }
@@ -130,9 +131,7 @@ public class HostAdapter extends RecyclerView.Adapter<HostAdapter.ViewHolder> {
     // Witht the following method we check what type of view is being passed
     @Override
     public int getItemViewType(int position) {
-        if (isPositionHeader(position))
-        {}
-            return 0;
+        return position;
     }
 
     private boolean isPositionHeader(int position) {

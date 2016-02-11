@@ -76,7 +76,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             switch (i){
 
                 case 1:
-
                     v.getContext().startActivity(new Intent(v.getContext(),HomeActivity.class));
                     break;
                 case 2:

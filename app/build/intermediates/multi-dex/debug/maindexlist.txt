@@ -20,6 +20,7 @@ com/google/android/gms/appindexing/AppIndex.class
 com/google/android/gms/internal/zzeb.class
 com/google/android/gms/internal/zzhz.class
 com/google/android/gms/ads/internal/request/zzb.class
+example/com/maitreev2/HostList$2.class
 com/google/android/gms/appindexing/Thing.class
 cz/msebera/android/httpclient/impl/client/ClientParamsStack.class
 com/google/android/gms/internal/zzda.class
@@ -77,7 +78,6 @@ android/support/annotation/IdRes.class
 cz/msebera/android/httpclient/client/protocol/RequestTargetAuthentication.class
 android/support/v7/widget/LinearLayoutCompat$OrientationMode.class
 android/support/v4/content/ContextCompat.class
-example/com/maitreev2/Response$DatesEntity.class
 com/google/android/gms/internal/zzbz.class
 com/google/android/gms/internal/zzbr.class
 android/support/v4/app/TaskStackBuilder.class
@@ -150,6 +150,7 @@ com/google/ads/mediation/customevent/CustomEventInterstitial.class
 com/google/android/gms/maps/MapFragment.class
 android/support/v7/app/ActionBarDrawerToggle$Delegate.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
+example/com/maitreev2/ResponseList$DatesEntity.class
 android/support/v4/view/MotionEventCompat.class
 android/support/design/widget/Snackbar$5.class
 example/com/maitreev2/AboutMaitree.class
@@ -181,7 +182,6 @@ com/google/android/gms/wearable/CapabilityApi$GetCapabilityResult.class
 com/google/android/gms/ads/internal/client/zzl.class
 android/support/v7/app/ActionBarDrawerToggle.class
 cz/msebera/android/httpclient/conn/params/ConnManagerParams.class
-example/com/maitreev2/Response$DatesEntity$PlacedetailsEntity.class
 com/google/android/gms/drive/DriveStatusCodes.class
 com/google/android/gms/internal/zzlh.class
 android/support/v4/view/ViewCompat$MarshmallowViewCompatImpl.class
@@ -215,6 +215,7 @@ com/google/android/gms/wearable/ChannelApi.class
 android/support/design/widget/MathUtils.class
 android/support/v4/media/session/MediaControllerCompat.class
 com/google/android/gms/internal/zziv.class
+example/com/maitreev2/ResponseList.class
 com/google/android/gms/ads/internal/request/zze.class
 com/google/android/gms/auth/AccountChangeEventsRequest.class
 com/google/android/gms/internal/zzhu.class
@@ -254,7 +255,6 @@ com/google/android/gms/internal/zzfm.class
 cz/msebera/android/httpclient/impl/conn/DefaultHttpRoutePlanner.class
 android/support/annotation/CallSuper.class
 com/google/android/gms/internal/zzjv.class
-example/com/maitreev2/Response.class
 com/google/android/gms/location/places/NearbyAlertRequest.class
 com/google/android/gms/cast/Cast$CastApi.class
 com/google/android/gms/internal/zziu.class
@@ -267,6 +267,7 @@ cz/msebera/android/httpclient/auth/params/AuthParams.class
 android/support/v4/widget/DrawerLayoutImpl.class
 com/google/android/gms/internal/zzjl.class
 com/google/android/gms/common/api/internal/zzb.class
+com/squareup/picasso/Downloader$Response.class
 com/google/android/gms/plus/internal/model/people/PersonEntity$UrlsEntity.class
 com/google/android/gms/internal/zzgn.class
 android/support/v7/app/ActionBarDrawerToggle$DelegateProvider.class
@@ -471,6 +472,7 @@ android/support/design/widget/TabLayout$2.class
 cz/msebera/android/httpclient/params/CoreProtocolPNames.class
 com/loopj/android/http/ResponseHandlerInterface.class
 com/google/android/gms/internal/zzdx.class
+example/com/maitreev2/ResponseHost.class
 com/google/android/gms/ads/mediation/admob/AdMobExtras.class
 android/support/design/R$dimen.class
 cz/msebera/android/httpclient/annotation/ThreadSafe.class
@@ -538,6 +540,7 @@ com/google/android/gms/internal/zzdd.class
 com/google/android/gms/internal/zzha.class
 com/google/android/gms/ads/doubleclick/PublisherAdRequest.class
 com/google/android/gms/internal/zzcc.class
+com/squareup/picasso/Picasso.class
 cz/msebera/android/httpclient/impl/conn/tsccm/WaitingThread.class
 android/support/design/R.class
 com/google/android/gms/internal/zzjc.class
@@ -622,6 +625,7 @@ example/com/maitreev2/R$string.class
 example/com/maitreev2/Adapters/MyAdapter.class
 com/google/android/gms/internal/zzlg.class
 android/support/v4/app/BackStackRecord.class
+com/squareup/picasso/Picasso$Builder.class
 android/support/v4/widget/SlidingPaneLayout.class
 cz/msebera/android/httpclient/impl/client/DefaultProxyAuthenticationHandler.class
 android/support/v7/recyclerview/R.class
@@ -847,6 +851,7 @@ com/google/android/gms/internal/zziz.class
 butterknife/BindBool.class
 com/google/android/gms/nearby/messages/internal/GetPermissionStatusRequest.class
 com/google/ads/mediation/MediationAdRequest.class
+example/com/maitreev2/HostList$1.class
 com/google/android/gms/analytics/ecommerce/ProductAction.class
 com/google/android/gms/internal/zzgx.class
 com/google/android/gms/ads/internal/purchase/zzd.class
@@ -1006,6 +1011,7 @@ example/com/maitreev2/PDF.class
 com/google/android/gms/ads/internal/zza.class
 com/google/android/gms/internal/zziy.class
 cz/msebera/android/httpclient/conn/HttpRoutedConnection.class
+example/com/maitreev2/ResponseHost$HostEntity.class
 android/support/design/widget/CoordinatorLayoutInsetsHelper.class
 com/google/android/gms/auth/api/signin/internal/zzk.class
 android/support/annotation/RequiresPermission$Write.class

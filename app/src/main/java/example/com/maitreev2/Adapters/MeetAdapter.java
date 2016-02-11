@@ -14,6 +14,7 @@ import java.util.Locale;
 
 import example.com.maitreev2.R;
 import example.com.maitreev2.Response;
+import example.com.maitreev2.ResponseList;
 
 /**
  * Created by Hello on 28-01-2016.
@@ -21,9 +22,9 @@ import example.com.maitreev2.Response;
 public class MeetAdapter extends BaseAdapter {
 
     Context context;
-    List<Response.DatesEntity.MeetingpointsEntity> meetpointlist;
+    List<ResponseList.DatesEntity.MeetingpointsEntity> meetpointlist;
     LayoutInflater mLayoutInflater;
-    public MeetAdapter(Context context, List<Response.DatesEntity.MeetingpointsEntity> meetpointlist)
+    public MeetAdapter(Context context, List<ResponseList.DatesEntity.MeetingpointsEntity> meetpointlist)
     {
         this.context=context;
         this.meetpointlist=meetpointlist;
@@ -35,7 +36,7 @@ public class MeetAdapter extends BaseAdapter {
     }
 
     @Override
-    public Response.DatesEntity.MeetingpointsEntity getItem(int position) {
+    public ResponseList.DatesEntity.MeetingpointsEntity getItem(int position) {
         return meetpointlist.get(position);
     }
 

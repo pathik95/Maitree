@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 responsseObj = gson.fromJson(responsestr, Response.class);
                 List<Response.DatesEntity> datelist=responsseObj.getDates();
                 Response.DatesEntity entity=datelist.get(0);
-                listView.setAdapter(new PlaceListAdapter(MainActivity.this,entity.getPlacedetails()));
+               // listView.setAdapter(new PlaceListAdapter(MainActivity.this,entity.getPlacedetails()));
                 int count=listView.getCount();
                 int height= (int) getResources().getDimension(R.dimen.placelist);
                 int totalheight=height*count;

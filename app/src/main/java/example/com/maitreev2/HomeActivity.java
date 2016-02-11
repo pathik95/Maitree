@@ -47,7 +47,7 @@ public class HomeActivity extends AppCompatActivity {
     SlidingTabLayout tabLayout;
 
 
-    //Drawer
+    //Drawer----ahmd18210
 
     String TITLES[];
     int ICONS[] = {R.drawable.ic_home_black_18dp,R.drawable.modern11,R.drawable.food,R.drawable.mapmarker,R.drawable.users6,R.drawable.hand220,R.drawable.silhouette67,R.drawable.user81,R.drawable.notebook91};
@@ -60,11 +60,11 @@ public class HomeActivity extends AppCompatActivity {
     String EMAIL = "Cultural Exchange Group";
     int PROFILE = R.drawable.maitreeicon;
 
-    String url="http://10.0.2.2/maitree/getplace.php";
+    final String url="http://10.0.2.2/maitree/getplace.php";
     Gson gson;
 
-    Response responsseObj;
-    List<Response.DatesEntity> datelist;
+    ResponseList responsseObj;
+    List<ResponseList.DatesEntity> datelist;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
                 // Toast.makeText(HomeActivity.this, responsestr, Toast.LENGTH_LONG).show();
                 //Log.d("response", responsestr);
                 gson = new Gson();
-                responsseObj = gson.fromJson(response, Response.class);
+                responsseObj = gson.fromJson(response, ResponseList.class);
                 datelist = responsseObj.getDates();
                 pager = (ViewPager) findViewById(R.id.pager);
                 tabLayout = (SlidingTabLayout) findViewById(R.id.tabs);

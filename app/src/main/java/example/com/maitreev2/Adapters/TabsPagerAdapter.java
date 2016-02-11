@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.List;
 
 import example.com.maitreev2.Response;
+import example.com.maitreev2.ResponseList;
 import example.com.maitreev2.TabFragment;
 
 /**
@@ -17,8 +18,9 @@ import example.com.maitreev2.TabFragment;
  */
 public class TabsPagerAdapter extends FragmentPagerAdapter {
 
-    List<Response.DatesEntity> datelist;
-    public TabsPagerAdapter(FragmentManager fm,List<Response.DatesEntity> datelist) {
+
+    List<ResponseList.DatesEntity> datelist;
+    public TabsPagerAdapter(FragmentManager fm,List<ResponseList.DatesEntity> datelist) {
         super(fm);
         this.datelist=datelist;
     }
@@ -27,8 +29,7 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
 
 
-
-        Response.DatesEntity datesEntity=datelist.get(position);
+        ResponseList.DatesEntity datesEntity=datelist.get(position);
 
         return new TabFragment(datesEntity);
     }
@@ -41,6 +42,6 @@ public class TabsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
 
-        return String.valueOf(position);
+        return datelist.get(position).getDate();
     }
 }
