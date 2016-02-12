@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     String TITLES[];
     int ICONS[] = {R.drawable.ic_home_black_18dp,R.drawable.modern11,R.drawable.food,R.drawable.mapmarker,R.drawable.users6,R.drawable.hand220,R.drawable.silhouette67,R.drawable.user81,R.drawable.notebook91};
-    Response responsseObj;
+//    Response responsseObj;
     String url="http://10.0.2.2/maitree/getplace.php";
     Gson gson;
     AsyncHttpClient client;
@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
             public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
                 String responsestr = new String(responseBody);
                 gson = new Gson();
-                responsseObj = gson.fromJson(responsestr, Response.class);
-                List<Response.DatesEntity> datelist=responsseObj.getDates();
-                Response.DatesEntity entity=datelist.get(0);
+               // responsseObj = gson.fromJson(responsestr, Response.class);
+            //    List<Response.DatesEntity> datelist=responsseObj.getDates();
+             //   Response.DatesEntity entity=datelist.get(0);
                // listView.setAdapter(new PlaceListAdapter(MainActivity.this,entity.getPlacedetails()));
                 int count=listView.getCount();
                 int height= (int) getResources().getDimension(R.dimen.placelist);

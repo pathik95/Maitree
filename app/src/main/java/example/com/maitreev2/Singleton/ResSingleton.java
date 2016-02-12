@@ -8,6 +8,7 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.List;
 
+import example.com.maitreev2.ResponseHost;
 import example.com.maitreev2.ResponseList;
 
 /**
@@ -17,6 +18,7 @@ public class ResSingleton {
 
     static ResSingleton obj;
     List<ResponseList.DatesEntity> datesEntities;
+    List<ResponseHost.HostEntity> hostlist;
     ResponseList.DatesEntity.PlacedetailsEntity placeEntity;
     RequestQueue requestQueue;
 
@@ -56,5 +58,15 @@ public class ResSingleton {
         return requestQueue;
     }
 
+    public void setHostList(List<ResponseHost.HostEntity> hostList)
+    {
+        this.hostlist=hostList;
 
+
+    }
+
+    public List<ResponseHost.HostEntity> getHostlist()
+    {
+        return hostlist;
+    }
 }

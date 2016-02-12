@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import example.com.maitreev2.R;
-import example.com.maitreev2.Response;
+
 import example.com.maitreev2.ResponseHost;
 import example.com.maitreev2.ResponseList;
 

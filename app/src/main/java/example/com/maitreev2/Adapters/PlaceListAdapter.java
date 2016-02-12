@@ -14,7 +14,6 @@ import java.util.List;
 
 import example.com.maitreev2.PlaceDetail;
 import example.com.maitreev2.R;
-import example.com.maitreev2.Response;
 import example.com.maitreev2.ResponseList;
 import example.com.maitreev2.Singleton.ResSingleton;
 
@@ -23,7 +22,7 @@ import example.com.maitreev2.Singleton.ResSingleton;
  */
 public class PlaceListAdapter extends BaseAdapter{
 
-    String[] placename={"Place name1","Place Name2","Placw Name3","Place Name4","Place name5","Placename6","placename 7"};
+  //  String[] placename={"Place name1","Place Name2","Placw Name3","Place Name4","Place name5","Placename6","placename 7"};
     LayoutInflater mLayoutInflater;
     Context context;
     List<ResponseList.DatesEntity.PlacedetailsEntity> placelist;
@@ -52,7 +51,7 @@ public class PlaceListAdapter extends BaseAdapter{
     public View getView(final int position, View convertView, ViewGroup parent) {
 
 
-        ViewHolder mViewHolder;
+        final ViewHolder mViewHolder;
         if(convertView==null){
             convertView = mLayoutInflater.inflate(R.layout.custlay,null);
             mViewHolder = new ViewHolder();
@@ -73,6 +72,7 @@ public class PlaceListAdapter extends BaseAdapter{
             public void onClick(View v) {
                 Intent i=new Intent(context, PlaceDetail.class);
                 ResSingleton.getInstance().setPlaceEntity(getItem(position));
+                i.putExtra("placeid",mViewHolder.placeid.getText().toString());
                 context.startActivity(i);
             }
         });

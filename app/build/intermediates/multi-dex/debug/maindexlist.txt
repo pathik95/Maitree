@@ -38,6 +38,7 @@ cz/msebera/android/httpclient/conn/ClientConnectionOperator.class
 android/support/v7/view/ActionMode$Callback.class
 android/support/v4/graphics/drawable/DrawableCompat.class
 cz/msebera/android/httpclient/auth/params/AuthParamBean.class
+example/com/maitreev2/PlaceDetail$2.class
 android/support/v4/app/FragmentManagerImpl$3.class
 cz/msebera/android/httpclient/client/protocol/ClientContext.class
 com/google/android/gms/internal/zzcx.class
@@ -410,6 +411,7 @@ com/google/android/gms/ads/internal/request/AdRequestInfoParcel.class
 android/support/v7/widget/RecyclerView$3.class
 com/google/android/gms/internal/zzff.class
 com/google/android/gms/ads/internal/zzd.class
+example/com/maitreev2/ResponsePlaceDetails$PlaceEntity.class
 cz/msebera/android/httpclient/impl/io/HttpResponseWriter.class
 android/support/v4/media/RatingCompatApi21.class
 android/support/v4/media/RatingCompat$1.class
@@ -509,6 +511,7 @@ butterknife/OnItemSelected.class
 cz/msebera/android/httpclient/client/params/AllClientPNames.class
 com/google/android/gms/ads/internal/client/zzd.class
 com/google/android/gms/common/zzc.class
+example/com/maitreev2/PlaceDetail$1.class
 android/support/v7/widget/OpReorderer$Callback.class
 com/google/android/gms/internal/zzgl.class
 cz/msebera/android/httpclient/params/HttpParams.class
@@ -557,6 +560,7 @@ cz/msebera/android/httpclient/impl/client/EntityEnclosingRequestWrapper.class
 com/google/android/gms/maps/model/Marker.class
 cz/msebera/android/httpclient/conn/scheme/SchemeLayeredSocketFactoryAdaptor.class
 com/google/android/gms/analytics/internal/zzae.class
+example/com/maitreev2/ResponsePlaceDetails.class
 com/google/android/gms/internal/zzbq.class
 com/google/android/gms/internal/zzbv.class
 cz/msebera/android/httpclient/params/HttpParamsNames.class
