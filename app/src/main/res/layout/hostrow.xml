@@ -16,11 +16,11 @@
         android:layout_margin="5dp"/>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New Text"
         style="@style/TitleText"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:id="@+id/hostlistname"
         android:textColor="@color/textcolor"
         android:layout_centerVertical="true"
@@ -37,8 +37,8 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:visibility="gone"
         android:id="@+id/hostlistid"
-        android:layout_above="@+id/txttime"
-        android:layout_toRightOf="@+id/txttime"
-        android:layout_toEndOf="@+id/txttime" />
+        android:layout_alignBottom="@+id/hostlistname"
+        android:layout_toRightOf="@+id/hostlistname"
+        android:layout_toEndOf="@+id/hostlistname" />
 
 </RelativeLayout>

@@ -14,6 +14,7 @@ android/support/v7/app/AppCompatActivity.class
 com/google/android/gms/internal/zzdy.class
 com/google/android/gms/internal/zzdi.class
 com/google/android/gms/appinvite/AppInviteInvitation$IntentBuilder.class
+example/com/maitreev2/FoodListActivity$2.class
 com/google/gson/annotations/SerializedName.class
 cz/msebera/android/httpclient/conn/scheme/HostNameResolver.class
 com/google/android/gms/appindexing/AppIndex.class
@@ -63,6 +64,7 @@ com/google/android/gms/internal/zzer.class
 com/google/android/gms/ads/internal/reward/client/zzg.class
 com/google/android/gms/games/Games.class
 android/support/design/widget/ViewOffsetBehavior.class
+example/com/maitreev2/Response/ResponseHost.class
 com/google/android/gms/wallet/fragment/WalletFragmentStyle$Dimension.class
 com/google/android/gms/internal/zzbj.class
 example/com/maitreev2/HomeActivity.class
@@ -151,7 +153,6 @@ com/google/ads/mediation/customevent/CustomEventInterstitial.class
 com/google/android/gms/maps/MapFragment.class
 android/support/v7/app/ActionBarDrawerToggle$Delegate.class
 android/support/v4/media/MediaMetadataCompat$RatingKey.class
-example/com/maitreev2/ResponseList$DatesEntity.class
 android/support/v4/view/MotionEventCompat.class
 android/support/design/widget/Snackbar$5.class
 example/com/maitreev2/AboutMaitree.class
@@ -204,6 +205,7 @@ com/google/android/gms/internal/zzgt.class
 com/google/android/gms/common/annotation/KeepName.class
 cz/msebera/android/httpclient/conn/scheme/Scheme.class
 android/support/annotation/StyleableRes.class
+example/com/maitreev2/Response/ResponseHost$HostEntity.class
 android/support/design/widget/TabLayout$TabView.class
 com/google/android/gms/common/GooglePlayServicesUtil.class
 cz/msebera/android/httpclient/conn/BasicManagedEntity.class
@@ -216,7 +218,6 @@ com/google/android/gms/wearable/ChannelApi.class
 android/support/design/widget/MathUtils.class
 android/support/v4/media/session/MediaControllerCompat.class
 com/google/android/gms/internal/zziv.class
-example/com/maitreev2/ResponseList.class
 com/google/android/gms/ads/internal/request/zze.class
 com/google/android/gms/auth/AccountChangeEventsRequest.class
 com/google/android/gms/internal/zzhu.class
@@ -342,6 +343,7 @@ cz/msebera/android/httpclient/impl/conn/DefaultClientConnectionOperator.class
 com/google/android/gms/internal/zzht.class
 com/google/android/gms/appinvite/AppInviteInvitation$IntentBuilder$PlatformMode.class
 com/google/android/gms/ads/internal/purchase/zze.class
+example/com/maitreev2/Response/ResponsePlaceDetails.class
 com/google/android/gms/ads/Correlator.class
 com/google/android/gms/ads/internal/zzk$zza.class
 android/support/design/widget/Snackbar$Behavior.class
@@ -411,9 +413,9 @@ com/google/android/gms/ads/internal/request/AdRequestInfoParcel.class
 android/support/v7/widget/RecyclerView$3.class
 com/google/android/gms/internal/zzff.class
 com/google/android/gms/ads/internal/zzd.class
-example/com/maitreev2/ResponsePlaceDetails$PlaceEntity.class
 cz/msebera/android/httpclient/impl/io/HttpResponseWriter.class
 android/support/v4/media/RatingCompatApi21.class
+example/com/maitreev2/Response/ResponseFood.class
 android/support/v4/media/RatingCompat$1.class
 com/google/android/gms/internal/zzbe.class
 com/google/android/gms/ads/internal/overlay/zzd$zza.class
@@ -448,6 +450,7 @@ com/google/android/gms/auth/api/signin/zzd.class
 cz/msebera/android/httpclient/impl/io/HttpRequestParser.class
 cz/msebera/android/httpclient/protocol/HttpService.class
 com/google/android/gms/ads/internal/zzq.class
+example/com/maitreev2/Response/ResponseFood$FoodEntity.class
 com/google/android/gms/common/api/Status.class
 android/support/v4/view/GravityCompat.class
 cz/msebera/android/httpclient/impl/client/cache/CacheConfig.class
@@ -474,7 +477,6 @@ android/support/design/widget/TabLayout$2.class
 cz/msebera/android/httpclient/params/CoreProtocolPNames.class
 com/loopj/android/http/ResponseHandlerInterface.class
 com/google/android/gms/internal/zzdx.class
-example/com/maitreev2/ResponseHost.class
 com/google/android/gms/ads/mediation/admob/AdMobExtras.class
 android/support/design/R$dimen.class
 cz/msebera/android/httpclient/annotation/ThreadSafe.class
@@ -493,6 +495,7 @@ com/google/android/gms/ads/internal/reward/client/RewardedVideoAdRequestParcel.c
 android/support/design/widget/Snackbar$7.class
 android/support/v7/widget/RecyclerView.class
 com/google/android/gms/games/multiplayer/Participant.class
+example/com/maitreev2/PDF$1backg.class
 android/support/v4/app/NotificationCompat$Builder.class
 android/support/v7/widget/helper/ItemTouchHelper$ViewDropHandler.class
 android/support/v7/widget/LinearLayoutManager.class
@@ -512,6 +515,7 @@ cz/msebera/android/httpclient/client/params/AllClientPNames.class
 com/google/android/gms/ads/internal/client/zzd.class
 com/google/android/gms/common/zzc.class
 example/com/maitreev2/PlaceDetail$1.class
+com/squareup/picasso/RequestCreator.class
 android/support/v7/widget/OpReorderer$Callback.class
 com/google/android/gms/internal/zzgl.class
 cz/msebera/android/httpclient/params/HttpParams.class
@@ -560,7 +564,6 @@ cz/msebera/android/httpclient/impl/client/EntityEnclosingRequestWrapper.class
 com/google/android/gms/maps/model/Marker.class
 cz/msebera/android/httpclient/conn/scheme/SchemeLayeredSocketFactoryAdaptor.class
 com/google/android/gms/analytics/internal/zzae.class
-example/com/maitreev2/ResponsePlaceDetails.class
 com/google/android/gms/internal/zzbq.class
 com/google/android/gms/internal/zzbv.class
 cz/msebera/android/httpclient/params/HttpParamsNames.class
@@ -588,6 +591,7 @@ com/google/android/gms/games/leaderboard/LeaderboardScore.class
 com/google/android/gms/internal/zzjt.class
 com/google/android/gms/auth/api/signin/internal/zzq.class
 com/google/android/gms/common/data/AbstractDataBuffer.class
+example/com/maitreev2/Response/ResponseList.class
 com/google/android/gms/wallet/WalletConstants$CardNetwork.class
 com/google/android/gms/internal/zzgq.class
 cz/msebera/android/httpclient/impl/io/SocketOutputBuffer.class
@@ -806,6 +810,7 @@ android/support/v4/view/ViewCompatKitKat.class
 cz/msebera/android/httpclient/entity/ByteArrayEntity.class
 cz/msebera/android/httpclient/impl/client/DefaultRedirectHandler.class
 cz/msebera/android/httpclient/impl/conn/ManagedClientConnectionImpl.class
+example/com/maitreev2/PDF$1.class
 com/google/android/gms/auth/api/signin/internal/zzm$zza.class
 com/google/android/gms/common/api/Api.class
 cz/msebera/android/httpclient/impl/AbstractHttpServerConnection.class
@@ -935,6 +940,7 @@ com/google/android/gms/internal/zzhd.class
 cz/msebera/android/httpclient/client/utils/URIBuilder.class
 android/support/v4/media/session/PlaybackStateCompatApi21.class
 android/support/v4/view/LayoutInflaterFactory.class
+example/com/maitreev2/PDF$2.class
 com/google/android/gms/internal/zzdo.class
 com/google/android/gms/internal/zzdw.class
 butterknife/OnCheckedChanged.class
@@ -1010,12 +1016,12 @@ android/support/annotation/AnimRes.class
 com/google/android/gms/internal/zzfy.class
 com/google/android/gms/measurement/internal/zzv.class
 android/support/v4/app/FragmentActivity$NonConfigurationInstances.class
+example/com/maitreev2/Response/ResponseList$DatesEntity.class
 android/support/v7/widget/RecyclerView$4.class
 example/com/maitreev2/PDF.class
 com/google/android/gms/ads/internal/zza.class
 com/google/android/gms/internal/zziy.class
 cz/msebera/android/httpclient/conn/HttpRoutedConnection.class
-example/com/maitreev2/ResponseHost$HostEntity.class
 android/support/design/widget/CoordinatorLayoutInsetsHelper.class
 com/google/android/gms/auth/api/signin/internal/zzk.class
 android/support/annotation/RequiresPermission$Write.class
@@ -1109,7 +1115,9 @@ android/support/v4/media/MediaBrowserCompat$SubscriptionCallback.class
 com/google/android/gms/plus/Plus.class
 android/support/annotation/VisibleForTesting.class
 android/support/v4/view/ViewCompatLollipop.class
+example/com/maitreev2/Response/ResponsePlaceDetails$PlaceEntity.class
 android/support/v4/media/MediaMetadataCompat$TextKey.class
+example/com/maitreev2/FoodListActivity$1.class
 android/support/design/widget/AppBarLayout$OnOffsetChangedListener.class
 android/support/design/widget/Snackbar$SnackbarLayout$OnLayoutChangeListener.class
 com/google/android/gms/wallet/Wallet.class

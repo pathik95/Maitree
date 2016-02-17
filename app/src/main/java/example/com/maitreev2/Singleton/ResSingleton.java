@@ -1,6 +1,5 @@
 package example.com.maitreev2.Singleton;
 
-import android.app.DownloadManager;
 import android.content.Context;
 
 import com.android.volley.RequestQueue;
@@ -8,8 +7,9 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.List;
 
-import example.com.maitreev2.ResponseHost;
-import example.com.maitreev2.ResponseList;
+import example.com.maitreev2.Response.ResponseFood;
+import example.com.maitreev2.Response.ResponseHost;
+import example.com.maitreev2.Response.ResponseList;
 
 /**
  * Created by Hello on 29-01-2016.
@@ -18,6 +18,16 @@ public class ResSingleton {
 
     static ResSingleton obj;
     List<ResponseList.DatesEntity> datesEntities;
+    List<ResponseFood.FoodEntity> foodEntities;
+
+    public List<ResponseFood.FoodEntity> getFoodEntities() {
+        return foodEntities;
+    }
+
+    public void setFoodEntities(List<ResponseFood.FoodEntity> foodEntities) {
+        this.foodEntities = foodEntities;
+    }
+
     List<ResponseHost.HostEntity> hostlist;
     ResponseList.DatesEntity.PlacedetailsEntity placeEntity;
     RequestQueue requestQueue;

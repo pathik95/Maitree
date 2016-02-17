@@ -65,21 +65,51 @@
 
         <activity
             android:name=".MapsActivity"
+            android:parentActivityName=".HomeActivity"
             android:label="@string/title_activity_maps">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="example.com.maitreev2.HomeActivity" />
         </activity>
-        <activity android:name=".FoodListActivity" />
-        <activity android:name=".HostList" />
-        <activity android:name=".SuggestedPlace"></activity>
-
-        <activity android:name=".HostProfile">
-
-
+        <activity android:name=".FoodListActivity"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HomeActivity" />
         </activity>
-        <activity android:name=".PDF"></activity>
-        <activity android:name=".AboutMaitree"></activity>
+
+        <activity android:name=".HostList"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HomeActivity" />
+        </activity>
+        <activity android:name=".SuggestedPlace"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HomeActivity" />
+        </activity>
+
+        <activity android:name=".HostProfile"
+            android:parentActivityName=".HostList">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HostList" />
+        </activity>
+        <activity android:name=".PDF"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HomeActivity" />
+        </activity>
+        <activity android:name=".AboutMaitree"
+            android:parentActivityName=".HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="example.com.maitreev2.HomeActivity" />
+        </activity>
     </application>
 
 </manifest>

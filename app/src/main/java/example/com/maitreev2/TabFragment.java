@@ -8,19 +8,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.List;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 import example.com.maitreev2.Adapters.MeetAdapter;
 import example.com.maitreev2.Adapters.PickAdapter;
 import example.com.maitreev2.Adapters.PlaceListAdapter;
+import example.com.maitreev2.Response.ResponseList;
 
 /**
  * Created by Hello on 18-01-2016.
  */
+
 public class TabFragment extends Fragment {
 
 

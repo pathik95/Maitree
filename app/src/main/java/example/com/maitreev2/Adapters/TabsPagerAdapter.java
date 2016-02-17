@@ -3,14 +3,11 @@ package example.com.maitreev2.Adapters;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.util.Log;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 
-import example.com.maitreev2.ResponseList;
+import example.com.maitreev2.Response.ResponseList;
 import example.com.maitreev2.TabFragment;
 
 /**

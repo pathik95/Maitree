@@ -1,13 +1,8 @@
 package example.com.maitreev2;
 
-import android.app.Notification;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.StyleRes;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,13 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.ViewGroup;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
@@ -30,15 +21,15 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.nispok.snackbar.Snackbar;
+import com.nispok.snackbar.SnackbarManager;
+import com.nispok.snackbar.listeners.ActionClickListener;
 
 import java.util.List;
 
-import cz.msebera.android.httpclient.Header;
 import example.com.maitreev2.Adapters.MyAdapter;
-import example.com.maitreev2.Adapters.PlaceListAdapter;
 import example.com.maitreev2.Adapters.TabsPagerAdapter;
+import example.com.maitreev2.Response.ResponseList;
 import example.com.maitreev2.Singleton.ResSingleton;
 
 public class HomeActivity extends AppCompatActivity {
@@ -60,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
     String EMAIL = "Cultural Exchange Group";
     int PROFILE = R.drawable.maitreeicon;
 
-    final String url="http://10.0.2.2/maitree/getplace.php";
+    final String url="http://vakratundasystem.in/harsh/maitree/getplace.php";
     Gson gson;
 
     ResponseList responsseObj;
@@ -97,7 +88,19 @@ public class HomeActivity extends AppCompatActivity {
         }, new com.android.volley.Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                // activity where it is displayed
+                SnackbarManager.show(Snackbar.with(getApplicationContext()) // context
+                        .text("Can not connect to server!") // text to display
+                        .actionLabel("retry") // action button label
+                        .actionListener(new ActionClickListener() {
+                            @Override
+                            public void onActionClicked(Snackbar snackbar) {
+                                Intent intent = getIntent();
+                                finish();
+                                startActivity(intent);
+                            }
+                        }) // action button's ActionClickListener
+                        , HomeActivity.this);
             }
         });
         RequestQueue requestQueue= ResSingleton.getInstance().getRequestQueue(getApplicationContext());

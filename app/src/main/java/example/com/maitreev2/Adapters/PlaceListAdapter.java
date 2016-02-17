@@ -8,13 +8,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 import example.com.maitreev2.PlaceDetail;
 import example.com.maitreev2.R;
-import example.com.maitreev2.ResponseList;
+import example.com.maitreev2.Response.ResponseList;
 import example.com.maitreev2.Singleton.ResSingleton;
 
 /**
@@ -67,6 +68,9 @@ public class PlaceListAdapter extends BaseAdapter{
         mViewHolder.placename.setText(getItem(position).getPlacename());
         mViewHolder.placetime.setText(getItem(position).getPlacetime());
         mViewHolder.placeid.setText(getItem(position).getPlaceid());
+
+        Picasso.with(context).load(getItem(position).getIcon()).resize(50,50).centerCrop().into(mViewHolder.placeimage);
+
         convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     String TITLES[];
     int ICONS[] = {R.drawable.ic_home_black_18dp,R.drawable.modern11,R.drawable.food,R.drawable.mapmarker,R.drawable.users6,R.drawable.hand220,R.drawable.silhouette67,R.drawable.user81,R.drawable.notebook91};
 //    Response responsseObj;
-    String url="http://10.0.2.2/maitree/getplace.php";
+    String url="http://vakratundasystem.in/harsh/maitree/getplace.php";
     Gson gson;
     AsyncHttpClient client;
     @Override

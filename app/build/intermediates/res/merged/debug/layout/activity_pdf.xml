@@ -6,8 +6,31 @@
     <include
         android:id="@+id/tool_bar"
         layout="@layout/tool_bar"></include>
-    <com.joanzapata.pdfview.PDFView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/pdf"/>
+        android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pdfprogress"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="false" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pdftext"
+            android:layout_centerHorizontal="true"
+            android:text="loading...."
+            android:layout_below="@+id/pdfprogress"/>
+        <com.joanzapata.pdfview.PDFView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pdf"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
 </LinearLayout>

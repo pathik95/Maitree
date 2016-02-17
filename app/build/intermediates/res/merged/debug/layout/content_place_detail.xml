@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="example.com.maitreev2.PlaceDetail"
     tools:showIn="@layout/activity_place_detail">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progrel">
 
-    <ScrollView
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/placeprogress"/>
+
+
+        <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
 
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/detailrel">
+
+
 
             <ImageView
                 android:id="@+id/placeicon"
@@ -67,34 +86,44 @@
                     android:layout_marginTop="@dimen/margin_medium"
                     android:text="@string/sample_base_desc" />
 
-                <ImageView
-                    android:id="@+id/placeimage1"
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/slider"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/image_height"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/basedesc"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rani1" />
+                    custom:pager_animation="Accordion"
+                    android:layout_below="@id/basedesc"
+                    custom:auto_cycle="true"
+                    custom:indicator_visibility="visible"
+                    custom:pager_animation_span="1100"
+                    android:layout_height="200dp"/>
 
-                <ImageView
-                    android:id="@+id/placeimage2"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/image_height"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/placeimage1"
-                    android:layout_marginTop="@dimen/margin_medium"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/rani2" />
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    custom:selected_color="#0095BF"
+                    custom:unselected_color="#55333333"
+                    custom:selected_drawable="@drawable/bird"
+                    custom:shape="oval"
+                    custom:selected_padding_left="5dp"
+                    custom:selected_padding_right="5dp"
+                    custom:unselected_padding_left="5dp"
+                    custom:unselected_padding_right="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    custom:selected_width="6dp"
+                    custom:selected_height="6dp"
+                    custom:unselected_width="6dp"
+                    custom:unselected_height="6dp"
+                    android:layout_marginBottom="20dp"
+                    />
 
                 <TextView
                     android:id="@+id/extradesc"
                     style="@style/NormalText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/placeimage2"
+                    android:layout_below="@+id/slider"
                     android:layout_marginTop="@dimen/margin_medium"
                     android:text="@string/sample_extra_desc" />
 
@@ -102,4 +131,5 @@
             </RelativeLayout>
         </RelativeLayout>
     </ScrollView>
+    </RelativeLayout>
 </LinearLayout>

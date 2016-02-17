@@ -10,11 +10,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.List;
-import java.util.Locale;
 
 import example.com.maitreev2.R;
 
-import example.com.maitreev2.ResponseList;
+import example.com.maitreev2.Response.ResponseList;
 
 /**
  * Created by Hello on 28-01-2016.
